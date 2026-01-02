@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Meniň şahsy sahypam</title>
+
+  <style>
+    @media (max-width: 600px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .duwme {
+    width: 90%;
+  }
+}
+
+    .profil {
+  width: 100px;       /* suraty kiçeltdik */
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto;
+}
+
+.duwme {
+  display: block;
+  margin: 10px auto 20px;
+  padding: 10px 20px;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.duwme:hover {
+  background-color: #006666;
+}
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #e0f7f7, #ffffff);
+    }
+
+    header {
+      background-color: #008080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+    .duwme {
+  transition: 0.3s;
+}
+
+.duwme:hover {
+  transform: scale(1.05);
+}
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Salam!</h1>
+    <p>Meniň şahsy web sahypama hoş geldiňiz</p>
+  </header>
+
+<section>
+   
+    <section id="habarlasmak">
+  <h2>Habarlaşmak</h2>
+  <p>Email: men@example.com</p>
+  <p>Telefon: +993 6X XXX XXX</p>
+</section>
+
+  <h2>Men barada</h2>
+
+  <img src="surat.jpg" alt="Meniň suratym" class="profil">
+
+  <button class="duwme" onclick="email()">📧 Email</button>
+  <button class="duwme" onclick="whatsapp()">📱 WhatsApp</button>
+  <button class="duwme" onclick="ashaga()">🔽 Aşak düş</button>
+
+  <p>
+    Men web-saýt döretmegi öwrenýärin. Bu meniň ilkinji şahsy sahypam.
+  </p>
+</section>
+
+
+  <section>
+    <h2>Habarlaşmak</h2>
+    <p>
+      Email: men@example.com
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Meniň adym
+  </footer>
+
+</body>
+<script>
+  function email() {
+    window.location.href = "mailto:men@example.com";
+  }
+
+  function whatsapp() {
+    window.open("https://wa.me/9936XXXXXXX", "_blank");
+  }
+
+  function ashaga() {
+    document.getElementById("habarlasmak").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+</script>
+</html>
