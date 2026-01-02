@@ -1,0 +1,20 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #e0f7f7, #ffffff);
+}
+
+header {
+  background: linear-gradient(to right, #008080, #00a0a0);
+}
+
+section {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.duwme {
+  transition: 0.3s;
+}
+
+.duwme:hover {
+  transform: scale(1.05);
+}
